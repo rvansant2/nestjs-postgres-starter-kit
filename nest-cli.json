@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testRegex": ".spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "coverageDirectory": "../coverage",
+  "collectCoverageFrom": [
+    "src/**",
+    "!src/migration/**",
+    "!src/scripts/**",
+    "!src/database/**",
+    "!src/model/**"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 60,
+      "lines": 60
+    }
+  }
+}
